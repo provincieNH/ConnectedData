@@ -1,0 +1,904 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.2.0), http://vowl.visualdataweb.org",
+  "namespace" : [ ],
+  "header" : {
+    "languages" : [ "IRI-based", "undefined" ],
+    "iri" : "http://datalab.noord-holland.nl",
+    "version" : "Created with TopBraid Composer"
+  },
+  "metrics" : {
+    "classCount" : 17,
+    "datatypeCount" : 7,
+    "objectPropertyCount" : 23,
+    "datatypePropertyCount" : 7,
+    "propertyCount" : 30,
+    "nodeCount" : 24,
+    "axiomCount" : 265,
+    "individualCount" : 15
+  },
+  "class" : [ {
+    "id" : "class11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "class15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "thing1",
+    "type" : "owl:Thing"
+  } ],
+  "classAttribute" : [ {
+    "id" : "class11",
+    "label" : {
+      "IRI-based" : "Begrip",
+      "undefined" : "Begrip"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Begrip",
+    "subClasses" : [ "class13", "class2", "class7", "class3", "class15", "class8", "class9", "class16", "class1", "class12" ],
+    "instances" : 0
+  }, {
+    "id" : "class9",
+    "label" : {
+      "IRI-based" : "Gebouw",
+      "undefined" : "Gebouw"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Gebouw",
+    "superClasses" : [ "class11" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "gebouw als bedoeld in artikel 1, eerste lid, onderdeel c, van de Woningwet",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class1",
+    "label" : {
+      "IRI-based" : "Werk",
+      "undefined" : "Werk"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Werk",
+    "superClasses" : [ "class11" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "alle door menselijk toedoen ontstane of te maken constructies met toebehoren, boven, op, in, onder of langs een vaarweg gelegen (waterverordening). een werk als bedoeld in artikel 1 Besluit bodemkwaliteit (milieuverordening)",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class8",
+    "label" : {
+      "IRI-based" : "Dijklichaam",
+      "undefined" : "Dijklichaam"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Dijklichaam",
+    "superClasses" : [ "class11" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "een aarden lichaam bestaande uit een kruin en een binnentalud en eenr\nbuitentalud met inbegrip van de ondergrond",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class10",
+    "label" : {
+      "IRI-based" : "Wegenverordening",
+      "undefined" : "Wegenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Wegenverordening",
+    "superClasses" : [ "class5" ],
+    "instances" : 0
+  }, {
+    "id" : "class17",
+    "label" : {
+      "IRI-based" : "Ruimtelijkeverordening",
+      "undefined" : "Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Ruimtelijkeverordening",
+    "superClasses" : [ "class5" ],
+    "instances" : 0
+  }, {
+    "id" : "class16",
+    "label" : {
+      "IRI-based" : "Weg",
+      "undefined" : "Weg"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Weg",
+    "superClasses" : [ "class11" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "de openbare weg zoals gedefinieerd in artikel 1 van de Wegenverkeerswet 1994, voor zover in beheer bij de provincie Noord-Holland",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class13",
+    "label" : {
+      "IRI-based" : "Bebouwing",
+      "undefined" : "Bebouwing"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Bebouwing",
+    "superClasses" : [ "class11" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "één of meerdere gebouwen en bouwwerken geen gebouwen zijnde",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class4",
+    "label" : {
+      "IRI-based" : "Waterverordening",
+      "undefined" : "Waterverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Waterverordening",
+    "superClasses" : [ "class5" ],
+    "instances" : 0
+  }, {
+    "id" : "class5",
+    "label" : {
+      "IRI-based" : "Verordening",
+      "undefined" : "Verordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Verordening",
+    "subClasses" : [ "class6", "class14", "class17", "class4", "class10" ],
+    "instances" : 0
+  }, {
+    "id" : "class7",
+    "label" : {
+      "IRI-based" : "Bestaandbouwblok",
+      "undefined" : "Bestaandbouwblok"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Bestaandbouwblok",
+    "superClasses" : [ "class11" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "bouwblok vastgelegd in een bestaand bestemmingsplan, zoals dat geldt ten tijde van de inwerkingtreding van de verordening",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class12",
+    "label" : {
+      "IRI-based" : "Windturbine",
+      "undefined" : "Windturbine"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Windturbine",
+    "superClasses" : [ "class11" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "een door wind aangedreven bouwwerk met een rotordiameter van ten minste 5 meter of een ashoogte van ten minste 7 meter waarmee energie wordt opgewekt, inclusief de bij dit bouwwerk behorende infrastructurele voorzieningen, met uitzonderingen van traditionele windmolens of replica’s hiervan",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class14",
+    "label" : {
+      "IRI-based" : "Monumentenverordening",
+      "undefined" : "Monumentenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Monumentenverordening",
+    "superClasses" : [ "class5" ],
+    "instances" : 0
+  }, {
+    "id" : "class2",
+    "label" : {
+      "IRI-based" : "Bedrijfswoning",
+      "undefined" : "Bedrijfswoning"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Bedrijfswoning",
+    "superClasses" : [ "class11" ],
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "undefined",
+        "value" : "een woning die gezien ligging en functie bedoeld is voor de huisvesting van personenr\nwier aanwezigheid gelet op de bestemming van een gebouw of terrein noodzakelijk is",
+        "type" : "label"
+      } ]
+    },
+    "instances" : 0
+  }, {
+    "id" : "class6",
+    "label" : {
+      "IRI-based" : "Milieuverordening",
+      "undefined" : "Milieuverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Milieuverordening",
+    "superClasses" : [ "class5" ],
+    "instances" : 0
+  }, {
+    "id" : "class3",
+    "label" : {
+      "IRI-based" : "Bouwvlak",
+      "undefined" : "Bouwvlak"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Bouwvlak",
+    "superClasses" : [ "class11" ],
+    "instances" : 0
+  }, {
+    "id" : "class15",
+    "label" : {
+      "IRI-based" : "Bouwwerk",
+      "undefined" : "Bouwwerk"
+    },
+    "iri" : "http://datalab.noord-holland.nl#Bouwwerk",
+    "superClasses" : [ "class11" ],
+    "instances" : 0
+  }, {
+    "id" : "thing1",
+    "label" : {
+      "undefined" : "Thing"
+    },
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "instances" : 0
+  } ],
+  "datatype" : [ {
+    "id" : "datatype1",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "literal5",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "datatype4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "datatype6",
+    "type" : "rdfs:Datatype"
+  } ],
+  "datatypeAttribute" : [ {
+    "id" : "datatype1",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype2",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype3",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "literal5",
+    "label" : {
+      "IRI-based" : "Literal"
+    },
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  }, {
+    "id" : "datatype4",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype7",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  }, {
+    "id" : "datatype6",
+    "label" : {
+      "IRI-based" : "string"
+    },
+    "iri" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "property" : [ {
+    "id" : "property45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property8",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property7",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property6",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property35",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property37",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property11",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property34",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property2",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property1",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "property42",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property19",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property39",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "property18",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property26",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "property22",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "id" : "property45",
+    "label" : {
+      "IRI-based" : "verwijzing_artikel",
+      "undefined" : "verwijzing_artikel"
+    },
+    "iri" : "http://datalab.noord-holland.nl#verwijzing_artikel",
+    "domain" : "class5",
+    "range" : "datatype7",
+    "subproperty" : [ "property44", "property40", "property41", "property42", "property39" ]
+  }, {
+    "id" : "property15",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class10",
+    "range" : "class5"
+  }, {
+    "id" : "property9",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class1",
+    "range" : "class11"
+  }, {
+    "id" : "property14",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class4",
+    "range" : "class5"
+  }, {
+    "id" : "property8",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class16",
+    "range" : "class11"
+  }, {
+    "id" : "property7",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class9",
+    "range" : "class11"
+  }, {
+    "id" : "property6",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class8",
+    "range" : "class11"
+  }, {
+    "id" : "property5",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class15",
+    "range" : "class11"
+  }, {
+    "id" : "property23",
+    "label" : {
+      "IRI-based" : "komt_voor_in_14",
+      "undefined" : "Werk_komt_voor_in_Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_14",
+    "domain" : "class1",
+    "range" : "class17",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property35",
+    "label" : {
+      "IRI-based" : "komt_voor_in_13",
+      "undefined" : "Gebouw_komt_voor_in_Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_13",
+    "domain" : "class9",
+    "range" : "class17",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property28",
+    "label" : {
+      "IRI-based" : "komt_voor_in_16",
+      "undefined" : "Bouwvlak_komt_voor_in_Milieuverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_16",
+    "domain" : "class3",
+    "range" : "class6",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property24",
+    "label" : {
+      "IRI-based" : "komt_voor_in_15",
+      "undefined" : "Bouwwerk_komt_voor_in_Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_15",
+    "domain" : "class15",
+    "range" : "class17",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property37",
+    "label" : {
+      "IRI-based" : "komt_voor_in_18",
+      "undefined" : "Werk_komt_voor_in_Milieuverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_18",
+    "domain" : "class1",
+    "range" : "class6",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property13",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class17",
+    "range" : "class5"
+  }, {
+    "id" : "property43",
+    "label" : {
+      "IRI-based" : "relatieType"
+    },
+    "iri" : "http://datalab.noord-holland.nl#relatieType",
+    "domain" : "thing1",
+    "range" : "literal5"
+  }, {
+    "id" : "property40",
+    "label" : {
+      "IRI-based" : "verwijzing_artikel_monumentenverordening",
+      "undefined" : "verwijzing_artikel_monumentenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#verwijzing_artikel_monumentenverordening",
+    "domain" : "class14",
+    "range" : "datatype2",
+    "superproperty" : [ "property45" ]
+  }, {
+    "id" : "property31",
+    "label" : {
+      "IRI-based" : "komt_voor_in_17",
+      "undefined" : "Bedrijfswoning_komt_voor_in_Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_17",
+    "domain" : "class2",
+    "range" : "class17",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property12",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class14",
+    "range" : "class5"
+  }, {
+    "id" : "property11",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class6",
+    "range" : "class5"
+  }, {
+    "id" : "property38",
+    "label" : {
+      "IRI-based" : "komt_voor_in_19",
+      "undefined" : "Bebouwing_komt_voor_in_Milieuverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_19",
+    "domain" : "class13",
+    "range" : "class6",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property10",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class12",
+    "range" : "class11"
+  }, {
+    "id" : "property44",
+    "label" : {
+      "IRI-based" : "verwijzing_artikel_milieuverordening",
+      "undefined" : "verwijzing_artikel_milieuverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#verwijzing_artikel_milieuverordening",
+    "domain" : "class6",
+    "range" : "datatype6",
+    "superproperty" : [ "property45" ]
+  }, {
+    "id" : "property32",
+    "label" : {
+      "IRI-based" : "komt_voor_in_10",
+      "undefined" : "Dijklichaam_komt_voor_in_Monumentenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_10",
+    "domain" : "class8",
+    "range" : "class14",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property33",
+    "label" : {
+      "IRI-based" : "komt_voor_in_11",
+      "undefined" : "Bouwwerk_komt_voor_in_Monumentenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_11",
+    "domain" : "class15",
+    "range" : "class14",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property34",
+    "label" : {
+      "IRI-based" : "komt_voor_in_12",
+      "undefined" : "Windturbine_komt_voor_in_Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_12",
+    "domain" : "class12",
+    "range" : "class17",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property36",
+    "label" : {
+      "IRI-based" : "komt_voor_in",
+      "undefined" : "komt_voor_in"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in",
+    "domain" : "thing1",
+    "range" : "thing1",
+    "subproperty" : [ "property22", "property32", "property33", "property34", "property35", "property23", "property24", "property28", "property31", "property37", "property38", "property25", "property21", "property27", "property30", "property26", "property29", "property18", "property19", "property16", "property17", "property20" ]
+  }, {
+    "id" : "property4",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class3",
+    "range" : "class11"
+  }, {
+    "id" : "property3",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class7",
+    "range" : "class11"
+  }, {
+    "id" : "property41",
+    "label" : {
+      "IRI-based" : "verwijzing_artikel_ruimtelijkeverordening",
+      "undefined" : "verwijzing_artikel_ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#verwijzing_artikel_ruimtelijkeverordening",
+    "domain" : "class17",
+    "range" : "datatype3",
+    "superproperty" : [ "property45" ]
+  }, {
+    "id" : "property2",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class2",
+    "range" : "class11"
+  }, {
+    "id" : "property1",
+    "label" : {
+      "IRI-based" : "Subclass Of"
+    },
+    "domain" : "class13",
+    "range" : "class11"
+  }, {
+    "id" : "property42",
+    "label" : {
+      "IRI-based" : "verwijzing_artikel_waterverordening",
+      "undefined" : "verwijzing_artikel_waterverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#verwijzing_artikel_waterverordening",
+    "domain" : "class4",
+    "range" : "datatype4",
+    "superproperty" : [ "property45" ]
+  }, {
+    "id" : "property30",
+    "label" : {
+      "IRI-based" : "komt_voor_in_22",
+      "undefined" : "Windturbine_komt_voor_in_Milieuverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_22",
+    "domain" : "class12",
+    "range" : "class6",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property21",
+    "label" : {
+      "IRI-based" : "komt_voor_in_20",
+      "undefined" : "Dijklichaam_komt_voor_in_Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_20",
+    "domain" : "class8",
+    "range" : "class17",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property27",
+    "label" : {
+      "IRI-based" : "komt_voor_in_21",
+      "undefined" : "Gebouw_komt_voor_in_Milieuverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_21",
+    "domain" : "class9",
+    "range" : "class6",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property17",
+    "label" : {
+      "IRI-based" : "komt_voor_in_8",
+      "undefined" : "Bouwwerk_komt_voor_in_Wegenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_8",
+    "domain" : "class15",
+    "range" : "class10",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property20",
+    "label" : {
+      "IRI-based" : "komt_voor_in_9",
+      "undefined" : "Bestaandbouwblok_komt_voor_in_Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_9",
+    "domain" : "class7",
+    "range" : "class17",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property19",
+    "label" : {
+      "IRI-based" : "komt_voor_in_6",
+      "undefined" : "Weg_komt_voor_in_Wegenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_6",
+    "domain" : "class16",
+    "range" : "class10",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property16",
+    "label" : {
+      "IRI-based" : "komt_voor_in_7",
+      "undefined" : "Werk_komt_voor_in_Waterverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_7",
+    "domain" : "class1",
+    "range" : "class4",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property29",
+    "label" : {
+      "IRI-based" : "komt_voor_in_4",
+      "undefined" : "Weg_komt_voor_in_Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_4",
+    "domain" : "class16",
+    "range" : "class17",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property39",
+    "label" : {
+      "IRI-based" : "verwijzing_artikel_wegenverordening",
+      "undefined" : "verwijzing_artikel_wegenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#verwijzing_artikel_wegenverordening",
+    "domain" : "class10",
+    "range" : "datatype1",
+    "superproperty" : [ "property45" ]
+  }, {
+    "id" : "property18",
+    "label" : {
+      "IRI-based" : "komt_voor_in_5",
+      "undefined" : "Bebouwing_komt_voor_in_Ruimtelijkeverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_5",
+    "domain" : "class13",
+    "range" : "class17",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property25",
+    "label" : {
+      "IRI-based" : "komt_voor_in_2",
+      "undefined" : "Werk_komt_voor_in_Wegenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_2",
+    "domain" : "class1",
+    "range" : "class10",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property26",
+    "label" : {
+      "IRI-based" : "komt_voor_in_3",
+      "undefined" : "Gebouw_komt_voor_in_Wegenverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_3",
+    "domain" : "class9",
+    "range" : "class10",
+    "superproperty" : [ "property36" ]
+  }, {
+    "id" : "property22",
+    "label" : {
+      "IRI-based" : "komt_voor_in_1",
+      "undefined" : "Bouwwerk_komt_voor_in_Milieuverordening"
+    },
+    "iri" : "http://datalab.noord-holland.nl#komt_voor_in_1",
+    "domain" : "class15",
+    "range" : "class6",
+    "superproperty" : [ "property36" ]
+  } ]
+}
