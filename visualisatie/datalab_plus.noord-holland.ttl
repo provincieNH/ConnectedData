@@ -1,0 +1,327 @@
+@prefix : <http://datalab.noord-holland.nl#> .
+@prefix datalab: <http://datalab.noord-holland.nl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://datalab.noord-holland.nl> a owl:Ontology ;
+    owl:imports <http://www.w3.org/2004/02/skos/core> ;
+    owl:versionInfo "Created with TopBraid Composer"^^xsd:string .
+
+datalab:komt_voor_in_1 a owl:ObjectProperty ;
+    rdfs:label "Bouwwerk_komt_voor_in_Milieuverordening" ;
+    rdfs:domain datalab:Bouwwerk ;
+    rdfs:range datalab:Milieuverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_10 a owl:ObjectProperty ;
+    rdfs:label "Dijklichaam_komt_voor_in_Monumentenverordening" ;
+    rdfs:domain datalab:Dijklichaam ;
+    rdfs:range datalab:Monumentenverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_11 a owl:ObjectProperty ;
+    rdfs:label "Bouwwerk_komt_voor_in_Monumentenverordening" ;
+    rdfs:domain datalab:Bouwwerk ;
+    rdfs:range datalab:Monumentenverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_12 a owl:ObjectProperty ;
+    rdfs:label "Windturbine_komt_voor_in_Ruimtelijkeverordening" ;
+    rdfs:domain datalab:Windturbine ;
+    rdfs:range datalab:Ruimtelijkeverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_13 a owl:ObjectProperty ;
+    rdfs:label "Gebouw_komt_voor_in_Ruimtelijkeverordening" ;
+    rdfs:domain datalab:Gebouw ;
+    rdfs:range datalab:Ruimtelijkeverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_14 a owl:ObjectProperty ;
+    rdfs:label "Werk_komt_voor_in_Ruimtelijkeverordening" ;
+    rdfs:domain datalab:Werk ;
+    rdfs:range datalab:Ruimtelijkeverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_15 a owl:ObjectProperty ;
+    rdfs:label "Bouwwerk_komt_voor_in_Ruimtelijkeverordening" ;
+    rdfs:domain datalab:Bouwwerk ;
+    rdfs:range datalab:Ruimtelijkeverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_16 a owl:ObjectProperty ;
+    rdfs:label "Bouwvlak_komt_voor_in_Milieuverordening" ;
+    rdfs:domain datalab:Bouwvlak ;
+    rdfs:range datalab:Milieuverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_17 a owl:ObjectProperty ;
+    rdfs:label "Bedrijfswoning_komt_voor_in_Ruimtelijkeverordening" ;
+    rdfs:domain datalab:Bedrijfswoning ;
+    rdfs:range datalab:Ruimtelijkeverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_18 a owl:ObjectProperty ;
+    rdfs:label "Werk_komt_voor_in_Milieuverordening" ;
+    rdfs:domain datalab:Werk ;
+    rdfs:range datalab:Milieuverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_19 a owl:ObjectProperty ;
+    rdfs:label "Bebouwing_komt_voor_in_Milieuverordening" ;
+    rdfs:domain datalab:Bebouwing ;
+    rdfs:range datalab:Milieuverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_2 a owl:ObjectProperty ;
+    rdfs:label "Werk_komt_voor_in_Wegenverordening" ;
+    rdfs:domain datalab:Werk ;
+    rdfs:range datalab:Wegenverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_20 a owl:ObjectProperty ;
+    rdfs:label "Dijklichaam_komt_voor_in_Ruimtelijkeverordening" ;
+    rdfs:domain datalab:Dijklichaam ;
+    rdfs:range datalab:Ruimtelijkeverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_21 a owl:ObjectProperty ;
+    rdfs:label "Gebouw_komt_voor_in_Milieuverordening" ;
+    rdfs:domain datalab:Gebouw ;
+    rdfs:range datalab:Milieuverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_22 a owl:ObjectProperty ;
+    rdfs:label "Windturbine_komt_voor_in_Milieuverordening" ;
+    rdfs:domain datalab:Windturbine ;
+    rdfs:range datalab:Milieuverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_3 a owl:ObjectProperty ;
+    rdfs:label "Gebouw_komt_voor_in_Wegenverordening" ;
+    rdfs:domain datalab:Gebouw ;
+    rdfs:range datalab:Wegenverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_4 a owl:ObjectProperty ;
+    rdfs:label "Weg_komt_voor_in_Ruimtelijkeverordening" ;
+    rdfs:domain datalab:Weg ;
+    rdfs:range datalab:Ruimtelijkeverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_5 a owl:ObjectProperty ;
+    rdfs:label "Bebouwing_komt_voor_in_Ruimtelijkeverordening" ;
+    rdfs:domain datalab:Bebouwing ;
+    rdfs:range datalab:Ruimtelijkeverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_6 a owl:ObjectProperty ;
+    rdfs:label "Weg_komt_voor_in_Wegenverordening" ;
+    rdfs:domain datalab:Weg ;
+    rdfs:range datalab:Wegenverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_7 a owl:ObjectProperty ;
+    rdfs:label "Werk_komt_voor_in_Waterverordening" ;
+    rdfs:domain datalab:Werk ;
+    rdfs:range datalab:Waterverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_8 a owl:ObjectProperty ;
+    rdfs:label "Bouwwerk_komt_voor_in_Wegenverordening" ;
+    rdfs:domain datalab:Bouwwerk ;
+    rdfs:range datalab:Wegenverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:komt_voor_in_9 a owl:ObjectProperty ;
+    rdfs:label "Bestaandbouwblok_komt_voor_in_Ruimtelijkeverordening" ;
+    rdfs:domain datalab:Bestaandbouwblok ;
+    rdfs:range datalab:Ruimtelijkeverordening ;
+    rdfs:subPropertyOf datalab:komt_voor_in .
+
+datalab:relatieType a owl:DatatypeProperty .
+
+datalab:verwijzing_artikel_milieuverordening a owl:DatatypeProperty ;
+    rdfs:label "verwijzing_artikel_milieuverordening"^^xsd:string ;
+    rdfs:domain datalab:Milieuverordening ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf datalab:verwijzing_artikel .
+
+datalab:verwijzing_artikel_monumentenverordening a owl:DatatypeProperty ;
+    rdfs:label "verwijzing_artikel_monumentenverordening"^^xsd:string ;
+    rdfs:domain datalab:Monumentenverordening ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf datalab:verwijzing_artikel .
+
+datalab:verwijzing_artikel_ruimtelijkeverordening a owl:DatatypeProperty ;
+    rdfs:label "verwijzing_artikel_ruimtelijkeverordening"^^xsd:string ;
+    rdfs:domain datalab:Ruimtelijkeverordening ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf datalab:verwijzing_artikel .
+
+datalab:verwijzing_artikel_waterverordening a owl:DatatypeProperty ;
+    rdfs:label "verwijzing_artikel_waterverordening"^^xsd:string ;
+    rdfs:domain datalab:Waterverordening ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf datalab:verwijzing_artikel .
+
+datalab:verwijzing_artikel_wegenverordening a owl:DatatypeProperty ;
+    rdfs:label "verwijzing_artikel_wegenverordening"^^xsd:string ;
+    rdfs:domain datalab:Wegenverordening ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf datalab:verwijzing_artikel .
+
+datalab:Bedrijfswoning a owl:Class ;
+    rdfs:label "Bedrijfswoning"^^xsd:string ;
+    datalab:komt_voor_in datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_17 datalab:Ruimtelijkeverordening ;
+    datalab:verwijzing_artikel_ruimtelijkeverordening "2h"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip ;
+    skos:definition """een woning die gezien ligging en functie bedoeld is voor de huisvesting van personen\r
+wier aanwezigheid gelet op de bestemming van een gebouw of terrein noodzakelijk is"""^^xsd:string .
+
+datalab:Bestaandbouwblok a owl:Class ;
+    rdfs:label "Bestaandbouwblok"^^xsd:string ;
+    datalab:komt_voor_in datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_9 datalab:Ruimtelijkeverordening ;
+    datalab:verwijzing_artikel_ruimtelijkeverordening "2j"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip ;
+    skos:definition "bouwblok vastgelegd in een bestaand bestemmingsplan, zoals dat geldt ten tijde van de inwerkingtreding van de verordening"^^xsd:string .
+
+datalab:Bouwvlak a owl:Class ;
+    rdfs:label "Bouwvlak"^^xsd:string ;
+    datalab:komt_voor_in datalab:Milieuverordening ;
+    datalab:komt_voor_in_16 datalab:Milieuverordening ;
+    datalab:verwijzing_artikel_milieuverordening "6.4-1.a"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip .
+
+datalab:Bebouwing a owl:Class ;
+    rdfs:label "Bebouwing"^^xsd:string ;
+    datalab:komt_voor_in datalab:Milieuverordening,
+        datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_19 datalab:Milieuverordening ;
+    datalab:komt_voor_in_5 datalab:Ruimtelijkeverordening ;
+    datalab:verwijzing_artikel_milieuverordening "6.4-1.a"^^xsd:string ;
+    datalab:verwijzing_artikel_ruimtelijkeverordening "2f"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip ;
+    skos:definition "één of meerdere gebouwen en bouwwerken geen gebouwen zijnde"^^xsd:string .
+
+datalab:Dijklichaam a owl:Class ;
+    rdfs:label "Dijklichaam"^^xsd:string ;
+    datalab:komt_voor_in datalab:Monumentenverordening,
+        datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_10 datalab:Monumentenverordening ;
+    datalab:komt_voor_in_20 datalab:Ruimtelijkeverordening ;
+    datalab:verwijzing_artikel_monumentenverordening "1g"^^xsd:string ;
+    datalab:verwijzing_artikel_ruimtelijkeverordening "30"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip ;
+    skos:definition """een aarden lichaam bestaande uit een kruin en een binnentalud en een\r
+buitentalud met inbegrip van de ondergrond"""^^xsd:string .
+
+datalab:Weg a owl:Class ;
+    rdfs:label "Weg"^^xsd:string ;
+    datalab:komt_voor_in datalab:Ruimtelijkeverordening,
+        datalab:Wegenverordening ;
+    datalab:komt_voor_in_4 datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_6 datalab:Wegenverordening ;
+    datalab:verwijzing_artikel_ruimtelijkeverordening "9; meerdere"^^xsd:string ;
+    datalab:verwijzing_artikel_wegenverordening "1a"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip ;
+    skos:definition "de openbare weg zoals gedefinieerd in artikel 1 van de Wegenverkeerswet 1994, voor zover in beheer bij de provincie Noord-Holland"^^xsd:string .
+
+datalab:Windturbine a owl:Class ;
+    rdfs:label "Windturbine"^^xsd:string ;
+    datalab:komt_voor_in datalab:Milieuverordening,
+        datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_12 datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_22 datalab:Milieuverordening ;
+    datalab:verwijzing_artikel_milieuverordening "4a-1a"^^xsd:string ;
+    datalab:verwijzing_artikel_ruimtelijkeverordening "2qq"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip ;
+    skos:definition "een door wind aangedreven bouwwerk met een rotordiameter van ten minste 5 meter of een ashoogte van ten minste 7 meter waarmee energie wordt opgewekt, inclusief de bij dit bouwwerk behorende infrastructurele voorzieningen, met uitzonderingen van traditionele windmolens of replica’s hiervan"^^xsd:string .
+
+datalab:Gebouw a owl:Class ;
+    rdfs:label "Gebouw"^^xsd:string ;
+    datalab:komt_voor_in datalab:Milieuverordening,
+        datalab:Ruimtelijkeverordening,
+        datalab:Wegenverordening ;
+    datalab:komt_voor_in_13 datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_21 datalab:Milieuverordening ;
+    datalab:komt_voor_in_3 datalab:Wegenverordening ;
+    datalab:verwijzing_artikel_milieuverordening "4.1.1.c"^^xsd:string ;
+    datalab:verwijzing_artikel_ruimtelijkeverordening "meerdere"^^xsd:string ;
+    datalab:verwijzing_artikel_wegenverordening "5e"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip ;
+    skos:definition "gebouw als bedoeld in artikel 1, eerste lid, onderdeel c, van de Woningwet"^^xsd:string .
+
+datalab:Bouwwerk a owl:Class ;
+    rdfs:label "Bouwwerk"^^xsd:string ;
+    datalab:komt_voor_in datalab:Milieuverordening,
+        datalab:Monumentenverordening,
+        datalab:Ruimtelijkeverordening,
+        datalab:Wegenverordening ;
+    datalab:komt_voor_in_1 datalab:Milieuverordening ;
+    datalab:komt_voor_in_11 datalab:Monumentenverordening ;
+    datalab:komt_voor_in_15 datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_8 datalab:Wegenverordening ;
+    datalab:verwijzing_artikel_milieuverordening "4a-1a"^^xsd:string ;
+    datalab:verwijzing_artikel_monumentenverordening "12-lid1"^^xsd:string ;
+    datalab:verwijzing_artikel_ruimtelijkeverordening "2qq; meerdere"^^xsd:string ;
+    datalab:verwijzing_artikel_wegenverordening "5e"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip .
+
+datalab:Waterverordening a owl:Class ;
+    rdfs:label "Waterverordening"^^xsd:string ;
+    rdfs:subClassOf datalab:Verordening .
+
+datalab:Werk a owl:Class ;
+    rdfs:label "Werk"^^xsd:string ;
+    datalab:komt_voor_in datalab:Milieuverordening,
+        datalab:Ruimtelijkeverordening,
+        datalab:Waterverordening,
+        datalab:Wegenverordening ;
+    datalab:komt_voor_in_14 datalab:Ruimtelijkeverordening ;
+    datalab:komt_voor_in_18 datalab:Milieuverordening ;
+    datalab:komt_voor_in_2 datalab:Wegenverordening ;
+    datalab:komt_voor_in_7 datalab:Waterverordening ;
+    datalab:verwijzing_artikel_milieuverordening "3.2.2.c"^^xsd:string ;
+    datalab:verwijzing_artikel_ruimtelijkeverordening "25.1.e"^^xsd:string ;
+    datalab:verwijzing_artikel_waterverordening "1.1.p"^^xsd:string ;
+    datalab:verwijzing_artikel_wegenverordening "5e"^^xsd:string ;
+    rdfs:subClassOf datalab:Begrip ;
+    skos:definition "alle door menselijk toedoen ontstane of te maken constructies met toebehoren, boven, op, in, onder of langs een vaarweg gelegen (waterverordening). een werk als bedoeld in artikel 1 Besluit bodemkwaliteit (milieuverordening)"^^xsd:string .
+
+datalab:verwijzing_artikel a owl:DatatypeProperty ;
+    rdfs:label "verwijzing_artikel"^^xsd:string ;
+    rdfs:domain datalab:Verordening ;
+    rdfs:range xsd:string .
+
+datalab:Verordening a owl:Class ;
+    rdfs:label "Verordening"^^xsd:string .
+
+datalab:Monumentenverordening a owl:Class ;
+    rdfs:label "Monumentenverordening"^^xsd:string ;
+    rdfs:subClassOf datalab:Verordening .
+
+datalab:Begrip a owl:Class ;
+    rdfs:label "Begrip"^^xsd:string .
+
+datalab:Wegenverordening a owl:Class ;
+    rdfs:label "Wegenverordening"^^xsd:string ;
+    rdfs:subClassOf datalab:Verordening .
+
+datalab:Milieuverordening a owl:Class ;
+    rdfs:label "Milieuverordening"^^xsd:string ;
+    rdfs:subClassOf datalab:Verordening .
+
+datalab:komt_voor_in a owl:ObjectProperty ;
+    rdfs:label "komt_voor_in"^^xsd:string .
+
+datalab:Ruimtelijkeverordening a owl:Class ;
+    rdfs:label "Ruimtelijkeverordening"^^xsd:string ;
+    rdfs:subClassOf datalab:Verordening .
+

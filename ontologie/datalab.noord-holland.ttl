@@ -1,0 +1,197 @@
+# baseURI: http://datalab.noord-holland.nl
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix : <http://datalab.noord-holland.nl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://datalab.noord-holland.nl>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+:Bebouwing
+  rdf:type owl:Class ;
+  :komt_voor_in :Milieuverordening ;
+  :komt_voor_in :Ruimtelijkeverordening ;
+  :verwijzing_artikel_milieuverordening "6.4-1.a"^^xsd:string ;
+  :verwijzing_artikel_ruimtelijkeverordening "2f"^^xsd:string ;
+  rdfs:label "Bebouwing"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+  skos:definition "één of meerdere gebouwen en bouwwerken geen gebouwen zijnde"^^xsd:string ;
+.
+:Bedrijfswoning
+  rdf:type owl:Class ;
+  :komt_voor_in :Ruimtelijkeverordening ;
+  :verwijzing_artikel_ruimtelijkeverordening "2h"^^xsd:string ;
+  rdfs:label "Bedrijfswoning"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+  skos:definition """een woning die gezien ligging en functie bedoeld is voor de huisvesting van personen
+wier aanwezigheid gelet op de bestemming van een gebouw of terrein noodzakelijk is"""^^xsd:string ;
+.
+:Begrip
+  rdf:type owl:Class ;
+  rdfs:label "Begrip"^^xsd:string ;
+.
+:Bestaandbouwblok
+  rdf:type owl:Class ;
+  :komt_voor_in :Ruimtelijkeverordening ;
+  :verwijzing_artikel_ruimtelijkeverordening "2j"^^xsd:string ;
+  rdfs:label "Bestaandbouwblok"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+  skos:definition "bouwblok vastgelegd in een bestaand bestemmingsplan, zoals dat geldt ten tijde van de inwerkingtreding van de verordening"^^xsd:string ;
+.
+:Bouwvlak
+  rdf:type owl:Class ;
+  :komt_voor_in :Milieuverordening ;
+  :verwijzing_artikel_milieuverordening "6.4-1.a"^^xsd:string ;
+  rdfs:label "Bouwvlak"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+.
+:Bouwwerk
+  rdf:type owl:Class ;
+  :komt_voor_in :Milieuverordening ;
+  :komt_voor_in :Monumentenverordening ;
+  :komt_voor_in :Ruimtelijkeverordening ;
+  :komt_voor_in :Wegenverordening ;
+  :verwijzing_artikel_milieuverordening "4a-1a"^^xsd:string ;
+  :verwijzing_artikel_monumentenverordening "12-lid1"^^xsd:string ;
+  :verwijzing_artikel_ruimtelijkeverordening "2qq; meerdere"^^xsd:string ;
+  :verwijzing_artikel_wegenverordening "5e"^^xsd:string ;
+  rdfs:label "Bouwwerk"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+.
+:Dijklichaam
+  rdf:type owl:Class ;
+  :komt_voor_in :Monumentenverordening ;
+  :komt_voor_in :Ruimtelijkeverordening ;
+  :verwijzing_artikel_monumentenverordening "1g"^^xsd:string ;
+  :verwijzing_artikel_ruimtelijkeverordening "30"^^xsd:string ;
+  rdfs:label "Dijklichaam"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+  skos:definition """een aarden lichaam bestaande uit een kruin en een binnentalud en een
+buitentalud met inbegrip van de ondergrond"""^^xsd:string ;
+.
+:Gebouw
+  rdf:type owl:Class ;
+  :komt_voor_in :Milieuverordening ;
+  :komt_voor_in :Ruimtelijkeverordening ;
+  :komt_voor_in :Wegenverordening ;
+  :verwijzing_artikel_milieuverordening "4.1.1.c"^^xsd:string ;
+  :verwijzing_artikel_ruimtelijkeverordening "meerdere"^^xsd:string ;
+  :verwijzing_artikel_wegenverordening "5e"^^xsd:string ;
+  rdfs:label "Gebouw"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+  skos:definition "gebouw als bedoeld in artikel 1, eerste lid, onderdeel c, van de Woningwet"^^xsd:string ;
+.
+:Milieuverordening
+  rdf:type owl:Class ;
+  rdfs:label "Milieuverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
+:Monumentenverordening
+  rdf:type owl:Class ;
+  rdfs:label "Monumentenverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
+:Ruimtelijkeverordening
+  rdf:type owl:Class ;
+  rdfs:label "Ruimtelijkeverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
+:Verordening
+  rdf:type owl:Class ;
+  rdfs:label "Verordening"^^xsd:string ;
+.
+:Waterverordening
+  rdf:type owl:Class ;
+  rdfs:label "Waterverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
+:Weg
+  rdf:type owl:Class ;
+  :komt_voor_in :Ruimtelijkeverordening ;
+  :komt_voor_in :Wegenverordening ;
+  :verwijzing_artikel_ruimtelijkeverordening "9; meerdere"^^xsd:string ;
+  :verwijzing_artikel_wegenverordening "1a"^^xsd:string ;
+  rdfs:label "Weg"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+  skos:definition "de openbare weg zoals gedefinieerd in artikel 1 van de Wegenverkeerswet 1994, voor zover in beheer bij de provincie Noord-Holland"^^xsd:string ;
+.
+:Wegenverordening
+  rdf:type owl:Class ;
+  rdfs:label "Wegenverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
+:Werk
+  rdf:type owl:Class ;
+  :komt_voor_in :Milieuverordening ;
+  :komt_voor_in :Ruimtelijkeverordening ;
+  :komt_voor_in :Waterverordening ;
+  :komt_voor_in :Wegenverordening ;
+  :verwijzing_artikel_milieuverordening "3.2.2.c"^^xsd:string ;
+  :verwijzing_artikel_ruimtelijkeverordening "25.1.e"^^xsd:string ;
+  :verwijzing_artikel_waterverordening "1.1.p"^^xsd:string ;
+  :verwijzing_artikel_wegenverordening "5e"^^xsd:string ;
+  rdfs:label "Werk"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+  skos:definition "alle door menselijk toedoen ontstane of te maken constructies met toebehoren, boven, op, in, onder of langs een vaarweg gelegen (waterverordening). een werk als bedoeld in artikel 1 Besluit bodemkwaliteit (milieuverordening)"^^xsd:string ;
+.
+:Windturbine
+  rdf:type owl:Class ;
+  :komt_voor_in :Milieuverordening ;
+  :komt_voor_in :Ruimtelijkeverordening ;
+  :verwijzing_artikel_milieuverordening "4a-1a"^^xsd:string ;
+  :verwijzing_artikel_ruimtelijkeverordening "2qq"^^xsd:string ;
+  rdfs:label "Windturbine"^^xsd:string ;
+  rdfs:subClassOf :Begrip ;
+  skos:definition "een door wind aangedreven bouwwerk met een rotordiameter van ten minste 5 meter of een ashoogte van ten minste 7 meter waarmee energie wordt opgewekt, inclusief de bij dit bouwwerk behorende infrastructurele voorzieningen, met uitzonderingen van traditionele windmolens of replica’s hiervan"^^xsd:string ;
+.
+:komt_voor_in
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "komt_voor_in"^^xsd:string ;
+.
+:verwijzing_artikel
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Verordening ;
+  rdfs:label "verwijzing_artikel"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:verwijzing_artikel_milieuverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Milieuverordening ;
+  rdfs:label "verwijzing_artikel_milieuverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
+:verwijzing_artikel_monumentenverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Monumentenverordening ;
+  rdfs:label "verwijzing_artikel_monumentenverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
+:verwijzing_artikel_ruimtelijkeverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Ruimtelijkeverordening ;
+  rdfs:label "verwijzing_artikel_ruimtelijkeverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
+:verwijzing_artikel_waterverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Waterverordening ;
+  rdfs:label "verwijzing_artikel_waterverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
+:verwijzing_artikel_wegenverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Wegenverordening ;
+  rdfs:label "verwijzing_artikel_wegenverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
