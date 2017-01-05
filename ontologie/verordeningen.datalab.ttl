@@ -1,0 +1,85 @@
+# baseURI: http://verordeningen.datalab.org
+# imports: http://www.w3.org/2004/02/skos/core
+
+@prefix : <http://verordeningen.datalab.org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://verordeningen.datalab.org>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.w3.org/2004/02/skos/core> ;
+  owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
+.
+:verwijzing_artikel
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Verordening ;
+  rdfs:label "verwijzing_artikel"^^xsd:string ;
+  rdfs:range xsd:string ;
+.
+:verwijzing_artikel_milieuverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Milieuverordening ;
+  rdfs:label "verwijzing_artikel_milieuverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
+:verwijzing_artikel_monumentenverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Monumentenverordening ;
+  rdfs:label "verwijzing_artikel_monumentenverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
+:verwijzing_artikel_ruimtelijkeverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Ruimtelijkeverordening ;
+  rdfs:label "verwijzing_artikel_ruimtelijkeverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
+:verwijzing_artikel_waterverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Waterverordening ;
+  rdfs:label "verwijzing_artikel_waterverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
+:verwijzing_artikel_wegenverordening
+  rdf:type owl:DatatypeProperty ;
+  rdfs:domain :Wegenverordening ;
+  rdfs:label "verwijzing_artikel_wegenverordening"^^xsd:string ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf :verwijzing_artikel ;
+.
+:Wegenverordening
+  rdf:type owl:Class ;
+  rdfs:label "Wegenverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
+:Milieuverordening
+  rdf:type owl:Class ;
+  rdfs:label "Milieuverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
+:Monumentenverordening
+  rdf:type owl:Class ;
+  rdfs:label "Monumentenverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
+:Ruimtelijkeverordening
+  rdf:type owl:Class ;
+  rdfs:label "Ruimtelijkeverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
+:Verordening
+  rdf:type owl:Class ;
+  rdfs:label "Verordening"^^xsd:string ;
+.
+:Waterverordening
+  rdf:type owl:Class ;
+  rdfs:label "Waterverordening"^^xsd:string ;
+  rdfs:subClassOf :Verordening ;
+.
