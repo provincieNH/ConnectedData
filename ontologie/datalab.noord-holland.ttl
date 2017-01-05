@@ -29,6 +29,7 @@
   :verwijzing_artikel_ruimtelijkeverordening "2h"^^xsd:string ;
   rdfs:label "Bedrijfswoning"^^xsd:string ;
   rdfs:subClassOf :Begrip ;
+  skos:closeMatch <http://ont.cbnl.org/cb/def/Bedrijfsgebouw> ;
   skos:definition """een woning die gezien ligging en functie bedoeld is voor de huisvesting van personen
 wier aanwezigheid gelet op de bestemming van een gebouw of terrein noodzakelijk is"""^^xsd:string ;
 .
@@ -63,6 +64,7 @@ wier aanwezigheid gelet op de bestemming van een gebouw of terrein noodzakelijk 
   :verwijzing_artikel_wegenverordening "5e"^^xsd:string ;
   rdfs:label "Bouwwerk"^^xsd:string ;
   rdfs:subClassOf :Begrip ;
+  skos:broadMatch <http://definities.geostandaarden.nl/concepten/imgeo/doc/begrip/OverigBouwwerk> ;
 .
 :Dijklichaam
   rdf:type owl:Class ;
@@ -72,6 +74,7 @@ wier aanwezigheid gelet op de bestemming van een gebouw of terrein noodzakelijk 
   :verwijzing_artikel_ruimtelijkeverordening "30"^^xsd:string ;
   rdfs:label "Dijklichaam"^^xsd:string ;
   rdfs:subClassOf :Begrip ;
+  skos:broadMatch <http://ont.cbnl.org/cb/def/Dijk> ;
   skos:definition """een aarden lichaam bestaande uit een kruin en een binnentalud en een
 buitentalud met inbegrip van de ondergrond"""^^xsd:string ;
 .
@@ -85,6 +88,7 @@ buitentalud met inbegrip van de ondergrond"""^^xsd:string ;
   :verwijzing_artikel_wegenverordening "5e"^^xsd:string ;
   rdfs:label "Gebouw"^^xsd:string ;
   rdfs:subClassOf :Begrip ;
+   skos:exactMatch <http://ont.cbnl.org/cb/def/Gebouw> ;
   skos:definition "gebouw als bedoeld in artikel 1, eerste lid, onderdeel c, van de Woningwet"^^xsd:string ;
 .
 :Milieuverordening
@@ -119,6 +123,7 @@ buitentalud met inbegrip van de ondergrond"""^^xsd:string ;
   :verwijzing_artikel_wegenverordening "1a"^^xsd:string ;
   rdfs:label "Weg"^^xsd:string ;
   rdfs:subClassOf :Begrip ;
+  skos:closeMatch <http://ont.cbnl.org/cb/def/Weg> ;
   skos:definition "de openbare weg zoals gedefinieerd in artikel 1 van de Wegenverkeerswet 1994, voor zover in beheer bij de provincie Noord-Holland"^^xsd:string ;
 .
 :Wegenverordening
@@ -148,6 +153,7 @@ buitentalud met inbegrip van de ondergrond"""^^xsd:string ;
   :verwijzing_artikel_ruimtelijkeverordening "2qq"^^xsd:string ;
   rdfs:label "Windturbine"^^xsd:string ;
   rdfs:subClassOf :Begrip ;
+  skos:closeMatch <http://ont.cbnl.org/cb/def/Windturbine> ;
   skos:definition "een door wind aangedreven bouwwerk met een rotordiameter van ten minste 5 meter of een ashoogte van ten minste 7 meter waarmee energie wordt opgewekt, inclusief de bij dit bouwwerk behorende infrastructurele voorzieningen, met uitzonderingen van traditionele windmolens of replica’s hiervan"^^xsd:string ;
 .
 :komt_voor_in
