@@ -23,8 +23,8 @@
   vo:verwijzing_artikel_milieuverordening "1.2.c"^^xsd:string ;
   vo:verwijzing_artikel_milieuverordening "6.1.1"^^xsd:string ;
   vo:verwijzing_artikel_milieuverordening "6.2"^^xsd:string ;
-  vo:verwijzing_artikel_ruimtelijkeverordening "32.4.i"^^xsd:string ;
-  vo:verwijzing_artikel_ruimtelijkeverordening "32.8.c"^^xsd:string ;
+  vo:verwijzing_artikel_ruimtelijkeverordening <http://connecteddata.nl/verordening/PRV_32.4.i> ;
+  vo:verwijzing_artikel_ruimtelijkeverordening <http://connecteddata.nl/verordening/PRV_32.8.c> ;
   rdfs:label "Aardkundig monument"^^xsd:string ;
   rdfs:subClassOf :Begrip ;
 .

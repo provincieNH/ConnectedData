@@ -13,6 +13,11 @@
   owl:imports <http://www.w3.org/2004/02/skos/core> ;
   owl:versionInfo "Created with TopBraid Composer"^^xsd:string ;
 .
+:Artikel
+  rdf:type owl:Class ;
+  rdfs:label "Artikel"^^xsd:string ;
+  rdfs:subClassOf owl:Thing ;
+.
 :Milieuverordening
   rdf:type owl:Class ;
   rdfs:label "Milieuverordening"^^xsd:string ;
@@ -22,6 +27,19 @@
   rdf:type owl:Class ;
   rdfs:label "Monumentenverordening"^^xsd:string ;
   rdfs:subClassOf :Verordening ;
+.
+<http://connecteddata.nl/verordening/PRV_32.4.i>
+  rdf:type :Artikel ;
+  rdf:type :Ruimtelijkeverordening ;
+  :verwijzing_artikel_ruimtelijkeverordening "32.4i"^^xsd:string ;
+  rdfs:label "Artikel"^^xsd:string ;
+  skos:definition "een windturbine niet is gelegen in een aardkundig monument, een UNESCO-erfgoed van uitzonderlijke universele waarden of een voormalig Nationaal Landschap en;"^^xsd:string ;
+.
+<http://connecteddata.nl/verordening/PRV_32.8.c>
+  rdf:type :Artikel ;
+  rdf:type :Ruimtelijkeverordening ;
+  rdfs:label "PRV_32.8.c"^^xsd:string ;
+  skos:definition "een windturbine niet is gelegen in een aardkundig monument, een UNESCO-erfgoed van uitzonderlijke universele waarden of een voormalig Nationaal Landschap;"^^xsd:string ;
 .
 :Ruimtelijkeverordening
   rdf:type owl:Class ;
@@ -66,7 +84,7 @@
   rdf:type owl:DatatypeProperty ;
   rdfs:domain :Ruimtelijkeverordening ;
   rdfs:label "verwijzing_artikel_ruimtelijkeverordening"^^xsd:string ;
-  rdfs:range xsd:string ;
+  rdfs:range :Artikel ;
   rdfs:subPropertyOf :verwijzing_artikel ;
 .
 :verwijzing_artikel_waterverordening
